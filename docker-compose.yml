@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  logstash_aws:
+    image: harbor.flexcore.mx/com.mx.fintecheando.logstash.aws
+    volumes:
+      - ./logpush.conf:/tmp/logpush.conf
+    restart: always
